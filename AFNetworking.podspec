@@ -15,6 +15,10 @@ Pod::Spec.new do |s|
   s.public_header_files = 'AFNetworking/*.h'
   s.source_files = 'AFNetworking/AFNetworking.h'
 
+  s.dependency 'SingleTrack'
+  s.prefix_header_contents = '#import "SingleTrack.h"'
+
+
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
     ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'

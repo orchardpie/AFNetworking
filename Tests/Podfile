@@ -6,6 +6,7 @@ def import_pods
   pod 'OCMock', '~> 2.1.1'
   pod 'Expecta', '~> 0.2.1'
   pod 'AFNetworking', :path => '../'
+  pod 'SingleTrack', git: 'https://github.com/orchardadam/SingleTrack'
 end
 
 target :ios do
